@@ -64,6 +64,6 @@ page_num = page_map[selected_label]
 image_path = IMAGE_DIR / f"page_{page_num}.jpg"
 
 if image_path.exists():
-    st.image(str(image_path), use_column_width=True)
+    st.image(str(image_path), use_container_width=True)
 else:
     st.warning(f"Image for Page {page_num} not found at expected path:\n`{image_path}`")
